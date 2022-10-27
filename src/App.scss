@@ -1,0 +1,169 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body {
+  text-align: center;
+  background-color: #282c34;
+  font-family: 'Oswald', sans-serif;
+}
+.App{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#calc {
+  width: 400px;
+  height: 500px;
+  padding: 20px;
+  background-color: #4e4e42;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #7272618e,
+              -5px -5px 5px #5252458e;
+
+  #brand{
+    display: block;
+    text-align: left;
+    height: 40px;
+    font-family: 'Eurostile MN', sans-serif;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    color: #f3f3f3;
+  }
+  
+  #display{
+    display: flex;
+    border: 1px solid gray;
+    box-shadow: 
+      inset 2px 2px 2px gray,
+      inset -2px -2px 2px gray;
+    background-color: #6B705C;
+    height: 60px;
+    margin-bottom: 25px;
+    padding: 0 5px;
+    font-family: 'Digital Numbers', sans-serif;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 2em;                                            
+  }
+
+  #digits{
+    height: 320px;
+    border: 5px solid #2222219c;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    background-color: #7c7c6a;
+    
+
+    .col:first-child{
+      grid-column-start: 4;
+      grid-column-end: 5;
+    }
+    
+    .keypad{
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #f3f3f3;
+      text-decoration: none;
+      font-size: 1.6em;
+      font-weight: 700;
+      backdrop-filter: blur(4px);
+      background-color: #222221;;
+      border-radius: 10px;
+      box-shadow: //35px 35px 68px 0px rgba(48, 44, 44, 0.5), 
+            inset -8px -8px 16px 0px rgba(48, 44, 44, 0.5), 
+            inset 0px 11px 28px 0px rgb(61, 57, 57);
+    }
+
+    .keypad:active {
+      box-shadow: inset 35px 35px 68px 0px rgba(48, 44, 44, 0.5);
+    }
+
+    #clear{
+      background-color: #9c2f2f;
+      box-shadow: //35px 35px 68px 0px rgba(177, 13, 13, 0.5), 
+            inset -8px -8px 16px 0px rgba(94, 6, 6, 0.5), 
+            inset 0px 11px 28px 0px rgb(197, 34, 34);
+    }
+    #clear:active {
+      box-shadow: inset 35px 35px 68px 0px rgba(177, 13, 13, 0.5);
+    }
+  }
+
+  
+  
+}
+@media only screen and (max-width: 520px) and (min-width: 380px){ 
+  #calc {
+    width: 300px;
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 380px){ 
+  #calc {
+    width: 250px;
+    height: 400px;
+
+    #digits {
+      height: 250px;
+      grid-gap: 5px;
+    }
+  }
+  
+}
+
+
+
+// @media only screen and (min-width: 768px) and (max-width: 991px){ ... }
+
+// @media only screen and (min-width: 992px){ ... }
