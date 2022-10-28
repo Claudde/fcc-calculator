@@ -1,6 +1,7 @@
 import './App.scss';
 import { Component } from 'react';
 import {evaluate, format} from 'mathjs';
+import {isMobile} from 'react-device-detect';
 
 const keyTable = {
   clear: {
@@ -204,7 +205,7 @@ class App extends Component {
 
 
       this.setState({
-        displayValue: toDisplay(pemdas),//pemdas.toString(),
+        displayValue: toDisplay(pemdas).toString(),//pemdas.toString(),
         toEquateArr: [],
         operatorClicked: true,
         flgEquated: true,
@@ -217,11 +218,26 @@ class App extends Component {
       if(displayable){
         if(this.state.displayValue !== '0' && 
           this.state.operatorClicked === false){
-            if(this.state.displayValue.length < 15){
-              this.setState({
-                displayValue: this.state.displayValue.concat(e.target.innerText),
-              });
+            if(window.innerWidth > 519) {//laptop
+              if(this.state.displayValue.length < 15){  //999999999999999
+                this.setState({
+                  displayValue: this.state.displayValue.concat(e.target.innerText),
+                });
+              }
+            } else if(window.innerWidth > 379){ //phone
+              if(this.state.displayValue.length < 11){  //999999999999999
+                this.setState({
+                  displayValue: this.state.displayValue.concat(e.target.innerText),
+                });
+              }  
+            } else {
+              if(this.state.displayValue.length < 9){  //999999999999999
+                this.setState({
+                  displayValue: this.state.displayValue.concat(e.target.innerText),
+                });
+              } 
             }
+            
         } else {
           this.setState({
             displayValue: e.target.innerText,
