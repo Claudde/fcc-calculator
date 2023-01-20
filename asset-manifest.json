@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/fcc-calculator/static/css/main.5da5bda6.css",
+    "main.css": "/fcc-calculator/static/css/main.a0335f38.css",
     "main.js": "/fcc-calculator/static/js/main.0501ad32.js",
     "static/js/787.dd89212b.chunk.js": "/fcc-calculator/static/js/787.dd89212b.chunk.js",
+    "static/media/Eurostile MN Extended Bold.woff": "/fcc-calculator/static/media/Eurostile MN Extended Bold.ac54c89bef3ebeee4cdb.woff",
+    "static/media/DigitalNumbers-Regular.woff": "/fcc-calculator/static/media/DigitalNumbers-Regular.a1fd499494668b41eb10.woff",
     "index.html": "/fcc-calculator/index.html",
-    "main.5da5bda6.css.map": "/fcc-calculator/static/css/main.5da5bda6.css.map",
+    "main.a0335f38.css.map": "/fcc-calculator/static/css/main.a0335f38.css.map",
     "main.0501ad32.js.map": "/fcc-calculator/static/js/main.0501ad32.js.map",
     "787.dd89212b.chunk.js.map": "/fcc-calculator/static/js/787.dd89212b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5da5bda6.css",
+    "static/css/main.a0335f38.css",
     "static/js/main.0501ad32.js"
   ]
 }
