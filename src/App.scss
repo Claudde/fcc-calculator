@@ -42,6 +42,21 @@ table {
 	border-spacing: 0;
 }
 
+@font-face {
+  font-family: 'Eurostile MN';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Eurostile MN'), url('../public/fonts/Eurostile\ MN\ Extended\ Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Digital Numbers';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Digital Numbers'), url('../public/fonts/DigitalNumbers-Regular.woff') format('woff');
+}
+
+
 
 body {
   text-align: center;
